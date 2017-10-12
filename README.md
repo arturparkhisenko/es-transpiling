@@ -3,6 +3,6 @@
 
 ## Usage
 ### npm scripts (using local gulp)
-- `npm run gulp` :fire:
+- `npm start` :fire:
 
 ## [MIT License](LICENSE.md)

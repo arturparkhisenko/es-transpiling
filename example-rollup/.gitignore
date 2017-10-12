@@ -1,6 +1,7 @@
 # NodeJS modules #
 ##################
 node_modules
+.esm-cache
 
 # Compiled source #
 ###################
