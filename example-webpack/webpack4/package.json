@@ -1,0 +1,23 @@
+{
+  "name": "webpack3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/magic-tower.js",
+  "module": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
