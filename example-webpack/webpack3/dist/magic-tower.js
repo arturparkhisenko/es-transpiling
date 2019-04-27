@@ -75,22 +75,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.getWizardName = getWizardName;
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cast", function() { return cast; });
+/* harmony export (immutable) */ __webpack_exports__["getWizardName"] = getWizardName;
 function cast(spell) {
-    return spell === 'avadakedavra' ? 'Avada Kedavra' : 'Wingardium Leviosa';
+  return spell === 'avadakedavra' ? 'Avada Kedavra' : 'Wingardium Leviosa';
 }
 
-exports.cast = cast;
+
 function getWizardName() {
-    return 'Harry';
+  return 'Harry';
 }
 
 /***/ })
