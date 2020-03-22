@@ -1,0 +1,13 @@
+{
+  "name": "example-rome",
+  "description": "example-rome",
+  "version": "1.0.0",
+  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rome bundle index.js index.dist.js",
+    "lint": "rome lint index.js",
+    "start": "rome run index.js"
+  }
+}

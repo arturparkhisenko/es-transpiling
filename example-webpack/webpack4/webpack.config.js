@@ -22,7 +22,7 @@ module.exports = {
         // umdNamedDefine: true,
         // globalObject  : 'this',
         // globalObject  : 'self',
-        globalObject: `typeof self !== 'undefined' ? self : this`,
+        globalObject: 'typeof self !== "undefined" ? self : this',
         // libraryExport: 'default',
     },
     module : {
