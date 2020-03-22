@@ -1,0 +1,13 @@
+[
+  {
+    "target": "project-example-rome/get-bundler-name.js",
+    "source": "project-example-rome/index.js"
+  },
+  {
+    "target": "project-example-rome/empty-unused.js",
+    "source": "project-example-rome/index.js"
+  },
+  {
+    "source": "project-example-rome/index.js"
+  }
+]
