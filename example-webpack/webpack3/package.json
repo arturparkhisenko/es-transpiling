@@ -1,17 +1,14 @@
 {
   "name": "webpack3",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/magic-tower.js",
+  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
+  "main": "dist/index.js",
   "module": "index.js",
   "scripts": {
     "build": "webpack -p",
     "start": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",

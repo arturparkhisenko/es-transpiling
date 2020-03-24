@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["magicTower"] = factory();
+		exports["index"] = factory();
 	else
-		root["magicTower"] = factory();
+		root["index"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -79,15 +79,71 @@ return /******/ (function(modules) { // webpackBootstrap
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cast", function() { return cast; });
-/* harmony export (immutable) */ __webpack_exports__["getWizardName"] = getWizardName;
-function cast(spell) {
-  return spell === 'avadakedavra' ? 'Avada Kedavra' : 'Wingardium Leviosa';
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getRandomQuote", function() { return getRandomQuote; });
+/* harmony export (immutable) */ __webpack_exports__["generateName"] = generateName;
+/* harmony export (immutable) */ __webpack_exports__["default"] = zombieFactory;
+function getRandomQuote() {
+  return Math.random() < 0.5 === true ? 'No guts, no gory.' : 'Me eat brains!';
 }
 
 
-function getWizardName() {
-  return 'Harry';
+function generateName() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'zGhoul';
+  return 'z' + name;
+}
+function zombieFactory() {
+  return {
+    name: generateName(),
+    damage: 42,
+    say: getRandomQuote
+  };
+}
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__empty__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__unused__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__zombie__ = __webpack_require__(0);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "empty", function() { return __WEBPACK_IMPORTED_MODULE_0__empty__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generateName", function() { return __WEBPACK_IMPORTED_MODULE_2__zombie__["generateName"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "getRandomQuote", function() { return __WEBPACK_IMPORTED_MODULE_2__zombie__["getRandomQuote"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "zombieFactory", function() { return __WEBPACK_IMPORTED_MODULE_2__zombie__["default"]; });
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "zombie", function() { return __WEBPACK_IMPORTED_MODULE_2__zombie__; });
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  empty: __WEBPACK_IMPORTED_MODULE_0__empty__["a" /* default */],
+  generateName: __WEBPACK_IMPORTED_MODULE_2__zombie__["generateName"],
+  getRandomQuote: __WEBPACK_IMPORTED_MODULE_2__zombie__["getRandomQuote"],
+  zombieFactory: __WEBPACK_IMPORTED_MODULE_2__zombie__["default"],
+  zombie: __WEBPACK_IMPORTED_MODULE_2__zombie__
+});
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = empty;
+function empty() {}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export default */
+function unused() {
+  return Math.random();
 }
 
 /***/ })

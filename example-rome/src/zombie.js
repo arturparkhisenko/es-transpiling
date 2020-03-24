@@ -4,7 +4,7 @@ function getRandomQuote() {
 
 export { getRandomQuote };
 
-export function generateName(name = 'Ghoul') {
+export function generateName(name = 'zGhoul') {
   return 'z' + name;
 }
 

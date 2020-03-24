@@ -1,11 +1,14 @@
-import * as MT from './dist/magic-tower';
-import {cast} from './dist/magic-tower';
-import {getWizardName} from './dist/magic-tower';
+import * as indexDefault from './dist/index';
+import {
+  empty,
+  generateName,
+  getRandomQuote,
+  zombieFactory,
+  zombie
+} from './dist/index';
 
-console.log('MT.cast(\'avadakedavra\')', MT.cast('avadakedavra'));
-
-console.log('MT[\'magicTower\'].cast()', MT['magicTower'].cast());
-
-console.log('cast(\'dunno\')', cast('dunno'));
-
-console.log('getWizardName()', getWizardName());
+console.log('indexDefault.generateName()', indexDefault.generateName());
+console.log('generateName()', generateName());
+console.log('getRandomQuote()', getRandomQuote());
+console.log('zombieFactory()', zombieFactory());
+console.log('zombie.generateName()', zombie.generateName());

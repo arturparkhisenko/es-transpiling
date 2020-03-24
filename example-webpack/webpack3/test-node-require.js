@@ -1,9 +1,6 @@
 // node test-node-require.js
 
-const magicTower = require('./dist/magic-tower');
+const index = require('./dist/index');
 
-console.log('magicTower', magicTower);
-
-console.log('magicTower.cast(\'avadakedavra\')', magicTower.cast('avadakedavra'));
-
-console.log('magicTower.getWizardName()', magicTower.getWizardName());
+console.log('index', index);
+console.log('index.generateName()', index.generateName());
