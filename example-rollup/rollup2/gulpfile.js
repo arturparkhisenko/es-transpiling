@@ -6,10 +6,9 @@ const nodeResolve = require('@rollup/plugin-node-resolve');
 
 gulp.task('default', async function() {
   const bundle = await rollup.rollup({
-    input: 'index.js',
+    input: './../../src/index.js',
     plugins: [
       nodeResolve({
-        jsnext: true,
         mainFields: ['browser', 'jsnext', 'main', 'module']
       }),
       commonjs(),
@@ -38,7 +37,8 @@ gulp.task('default', async function() {
   });
   await bundle.write({
     format: 'umd',
-    file: 'index.umd.js'
+    file: 'index.umd.js',
+    name: 'default'
   });
   console.log('Bundle created');
 });

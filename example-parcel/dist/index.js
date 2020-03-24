@@ -117,38 +117,107 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"get-bundler-name.js":[function(require,module,exports) {
+})({"empty.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = getBundlerName;
+exports.default = empty;
 
-function getBundlerName() {
-  return 'Rollup';
+function empty() {}
+},{}],"unused.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = unused;
+
+function unused() {
+  return Math.random();
 }
-},{}],"empty-unused.js":[function(require,module,exports) {
+},{}],"zombie.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = emptyUnused;
+exports.getRandomQuote = getRandomQuote;
+exports.generateName = generateName;
+exports.default = zombieFactory;
 
-function emptyUnused() {}
+function getRandomQuote() {
+  return Math.random() < 0.5 === true ? 'No guts, no gory.' : 'Me eat brains!';
+}
+
+function generateName() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'zGhoul';
+  return 'z' + name;
+}
+
+function zombieFactory() {
+  return {
+    name: generateName(),
+    damage: 42,
+    say: getRandomQuote
+  };
+}
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _getBundlerName = _interopRequireDefault(require("./get-bundler-name"));
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "empty", {
+  enumerable: true,
+  get: function () {
+    return _empty.default;
+  }
+});
+Object.defineProperty(exports, "zombieFactory", {
+  enumerable: true,
+  get: function () {
+    return zombie.default;
+  }
+});
+Object.defineProperty(exports, "getRandomQuote", {
+  enumerable: true,
+  get: function () {
+    return zombie.getRandomQuote;
+  }
+});
+Object.defineProperty(exports, "generateName", {
+  enumerable: true,
+  get: function () {
+    return zombie.generateName;
+  }
+});
+exports.zombie = exports.default = void 0;
 
-var _emptyUnused = _interopRequireDefault(require("./empty-unused"));
+var _empty = _interopRequireDefault(require("./empty"));
+
+var _unused = _interopRequireDefault(require("./unused"));
+
+var zombie = _interopRequireWildcard(require("./zombie"));
+
+exports.zombie = zombie;
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var name = (0, _getBundlerName.default)();
-console.log(name);
-},{"./get-bundler-name":"get-bundler-name.js","./empty-unused":"empty-unused.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var _default = {
+  empty: _empty.default,
+  generateName: zombie.generateName,
+  getRandomQuote: zombie.getRandomQuote,
+  zombieFactory: zombie.default,
+  zombie: zombie
+};
+exports.default = _default;
+},{"./empty":"empty.js","./unused":"unused.js","./zombie":"zombie.js"}],"../example-parcel/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -176,7 +245,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56326" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54845" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -352,5 +421,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../example-parcel/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/index.js.map

@@ -2,6 +2,9 @@
 
 const path = require('path');
 
+// Use it to upgrade to the new Webpack
+process.traceDeprecation = true;
+
 module.exports = {
   // mode  : 'production',
   // mode  : 'development',

@@ -1,13 +1,11 @@
 {
   "name": "example-rome",
-  "description": "example-rome",
   "version": "1.0.0",
   "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "swc index.js -o index.dist.js",
-    "start": "swc index.js"
+    "build": "swc ./../src/index.js -o index.dist.js",
+    "start": "swc ./../src/index.js"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.23",

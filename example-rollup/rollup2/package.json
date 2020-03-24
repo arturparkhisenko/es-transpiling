@@ -1,9 +1,7 @@
 {
   "name": "example-rollup",
-  "description": "example-rollup",
   "version": "1.0.0",
   "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
-  "main": "gulpfile.js",
   "scripts": {
     "gulp": "./node_modules/.bin/gulp",
     "start": "npm run gulp"
