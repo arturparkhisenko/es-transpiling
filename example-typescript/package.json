@@ -1,0 +1,16 @@
+{
+  "name": "example-typescript",
+  "version": "1.0.0",
+  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build-es5-amd && npm run build-es5-cjs && npm run build-es5-umd && npm run build-es5-es6",
+    "build-es5-amd": "tsc --allowJs --module AMD --target ES5 ./../src/index.js --outFile index-es5.amd.js",
+    "build-es5-cjs": "tsc --allowJs --module CommonJS --target ES5 ./../src/index.js --outDir dist-es5-cjs",
+    "build-es5-umd": "tsc --allowJs --module UMD --target ES5 ./../src/index.js --outDir dist-es5-umd",
+    "build-es5-es6": "tsc --allowJs --module ES6 --target ES5 ./../src/index.js --outDir dist-es5-es6"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
