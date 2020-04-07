@@ -11,6 +11,7 @@
   - [rollup-v2](https://rollupjs.org/guide/en/)
 - [Rome](https://romejs.dev/)
 - [swc](https://swc-project.github.io/)
+- [TypeScript](https://www.typescriptlang.org/)
 - Webpack
   - [webpack-v3](https://github.com/webpack/webpack.js.org/tree/v3.11.0/src/content/configuration)
   - [webpack-v4](https://v4.webpack.js.org/)
