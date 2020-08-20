@@ -11,6 +11,6 @@
     "build-es5-es6": "tsc --allowJs --module ES6 --target ES5 ./../src/index.js --outDir dist-es5-es6"
   },
   "devDependencies": {
-    "typescript": "^3.8.3"
+    "typescript": "^4.0.2"
   }
 }

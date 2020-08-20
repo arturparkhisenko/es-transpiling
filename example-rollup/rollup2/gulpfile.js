@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const rollup = require('rollup');
 const babel = require('rollup-plugin-babel');
 const commonjs = require('@rollup/plugin-commonjs');
-const nodeResolve = require('@rollup/plugin-node-resolve');
+const {nodeResolve} = require('@rollup/plugin-node-resolve');
 
 gulp.task('default', async function() {
   const bundle = await rollup.rollup({

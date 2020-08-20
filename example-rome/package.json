@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "build": "rome bundle index.js index.dist.js",
-    "lint": "rome lint index.js",
+    "lint": "rome check index.js",
     "start": "rome run index.js"
+  },
+  "devDependencies": {
+    "rome": "^10.0.4-beta"
   }
 }

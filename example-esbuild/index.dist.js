@@ -1,87 +1,59 @@
-((modules, entryPoint) => {
-  let global = function() {
-    return this;
-  }();
-  let cache = {};
-  let require = (target, arg) => {
-    if (typeof target === "number") {
-      let module = cache[target], exports;
-      if (!module) {
-        module = cache[target] = {
-          exports: {}
-        };
-        modules[target].call(global, require, module.exports, module);
-      }
-      exports = module.exports;
-      if (arg && (!exports || !exports.__esModule)) {
-        if (!exports || typeof exports !== "object") {
-          exports = {};
-        }
-        if (!("default" in exports)) {
-          Object.defineProperty(exports, "default", {
-            get: () => module.exports,
-            enumerable: true
-          });
-        }
-      }
-      return exports;
+(() => {
+  var __defineProperty = Object.defineProperty;
+  var __commonJS = (callback, module) => () => {
+    if (!module) {
+      module = {exports: {}};
+      callback(module.exports, module);
     }
-    arg.__esModule = () => true;
-    for (let name in arg) {
-      Object.defineProperty(target, name, {
-        get: arg[name],
-        enumerable: true
-      });
-    }
+    return module.exports;
   };
-  return require(entryPoint);
-})({
-  1(require, index) {
-    // ../src/empty.js
-    function empty2() {
-    }
+  var __markAsModule = (target) => {
+    return __defineProperty(target, "__esModule", {value: true});
+  };
+  var __export = (target, all) => {
+    __markAsModule(target);
+    for (var name in all)
+      __defineProperty(target, name, {get: all[name], enumerable: true});
+  };
 
-    // ../src/unused.js
-    function unused3() {
-      return Math.random();
-    }
-
-    // ../src/zombie.js
-    var exports = {};
-    require(exports, {
-      default: () => default4,
-      generateName: () => generateName,
-      getRandomQuote: () => getRandomQuote
-    });
-    function getRandomQuote() {
-      return Math.random() < 0.5 === true ? "No guts, no gory." : "Me eat brains!";
-    }
-    function generateName(name = "zGhoul") {
-      return "z" + name;
-    }
-    function zombieFactory() {
-      return {
-        name: generateName(),
-        damage: 42,
-        say: getRandomQuote
-      };
-    }
-
-    // ../src/index.js
-    require(index, {
-      default: () => default5,
-      empty: () => default2,
+  // ../src/index.js
+  var require_src = __commonJS((exports) => {
+    __export(exports, {
+      default: () => src_default,
+      empty: () => empty,
       generateName: () => generateName,
       getRandomQuote: () => getRandomQuote,
-      zombie: () => exports,
-      zombieFactory: () => default4
+      zombie: () => zombie_exports,
+      zombieFactory: () => zombieFactory
     });
-    const default5 = {
-      empty: default2,
-      generateName,
-      getRandomQuote,
-      zombieFactory: default4,
-      zombie: exports
+    var src_default = {empty, generateName, getRandomQuote, zombieFactory, zombie: zombie_exports};
+  });
+
+  // ../src/empty.js
+  function empty() {
+  }
+
+  // ../src/unused.js
+
+  // ../src/zombie.js
+  const zombie_exports = {};
+  __export(zombie_exports, {
+    default: () => zombieFactory,
+    generateName: () => generateName,
+    getRandomQuote: () => getRandomQuote
+  });
+  function getRandomQuote() {
+    return Math.random() < 0.5 === true ? "No guts, no gory." : "Me eat brains!";
+  }
+  function generateName(name = "Ghoul") {
+    return "z" + name;
+  }
+  function zombieFactory() {
+    return {
+      name: generateName(),
+      damage: 42,
+      say: getRandomQuote
     };
   }
-}, 1);
+  require_src();
+})();

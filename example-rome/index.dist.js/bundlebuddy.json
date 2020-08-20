@@ -1,21 +1,21 @@
 [
-  {
-    "target": "project-example-rome/example-src/index.js",
-    "source": "project-example-rome/index.js"
-  },
-  {
-    "target": "project-example-rome/example-src/mpty.js",
-    "source": "project-example-rome/example-src/index.js"
-  },
-  {
-    "target": "project-example-rome/example-src/unused.js",
-    "source": "project-example-rome/example-src/index.js"
-  },
-  {
-    "target": "project-example-rome/example-src/zombie.js",
-    "source": "project-example-rome/example-src/index.js"
-  },
-  {
-    "source": "project-example-rome/index.js"
-  }
+	{
+		"target": "example-rome/src/index.js",
+		"source": "example-rome/index.js"
+	},
+	{
+		"target": "example-rome/src/empty.js",
+		"source": "example-rome/src/index.js"
+	},
+	{
+		"target": "example-rome/src/unused.js",
+		"source": "example-rome/src/index.js"
+	},
+	{
+		"target": "example-rome/src/zombie.js",
+		"source": "example-rome/src/index.js"
+	},
+	{
+		"source": "example-rome/index.js"
+	}
 ]

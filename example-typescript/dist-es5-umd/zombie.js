@@ -9,6 +9,7 @@
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.generateName = exports.getRandomQuote = void 0;
     function getRandomQuote() {
         return Math.random() < 0.5 === true ? 'No guts, no gory.' : 'Me eat brains!';
     }

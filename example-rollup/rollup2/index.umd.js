@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.default = {}));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.default = {}));
 }(this, (function (exports) { 'use strict';
 
   function empty() {}
@@ -10,7 +10,7 @@
     return Math.random() < 0.5 === true ? 'No guts, no gory.' : 'Me eat brains!';
   }
   function generateName() {
-    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'zGhoul';
+    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Ghoul';
     return 'z' + name;
   }
   function zombieFactory() {

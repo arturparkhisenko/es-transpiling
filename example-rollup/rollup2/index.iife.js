@@ -7,7 +7,7 @@
     return Math.random() < 0.5 === true ? 'No guts, no gory.' : 'Me eat brains!';
   }
   function generateName() {
-    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'zGhoul';
+    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Ghoul';
     return 'z' + name;
   }
   function zombieFactory() {

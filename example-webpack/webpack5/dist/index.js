@@ -25,12 +25,12 @@ return /******/ (() => { // webpackBootstrap
   !*** ../../src/empty.js ***!
   \**************************/
 /*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => /* binding */ empty\n/* harmony export */ });\nfunction empty() {}\n\n//# sourceURL=webpack://index/../../src/empty.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => /* binding */ empty\n/* harmony export */ });\nfunction empty() {}\n\n//# sourceURL=webpack://index/../../src/empty.js?");
 
 /***/ }),
 
@@ -39,17 +39,17 @@ eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harm
   !*** ../../src/index.js ***!
   \**************************/
 /*! namespace exports */
-/*! export default [provided] [maybe used (runtime-defined)] [usage prevents renaming] */
-/*! export empty [provided] [maybe used (runtime-defined)] [usage prevents renaming] */
-/*! export generateName [provided] [maybe used (runtime-defined)] [usage prevents renaming] */
-/*! export getRandomQuote [provided] [maybe used (runtime-defined)] [usage prevents renaming] */
-/*! export zombie [provided] [maybe used (runtime-defined)] [usage prevents renaming] */
-/*!   export default [provided] [used] [usage prevents renaming] */
-/*!   export generateName [provided] [used] [usage prevents renaming] */
-/*!   export getRandomQuote [provided] [used] [usage prevents renaming] */
-/*!   other exports [not provided] [maybe used (runtime-defined)] */
-/*! export zombieFactory [provided] [maybe used (runtime-defined)] [usage prevents renaming] */
-/*! other exports [not provided] [maybe used (runtime-defined)] */
+/*! export default [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] */
+/*! export empty [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ../../src/empty.js .default */
+/*! export generateName [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ../../src/zombie.js .generateName */
+/*! export getRandomQuote [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ../../src/zombie.js .getRandomQuote */
+/*! export zombie [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ../../src/zombie.js */
+/*!   export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export generateName [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export getRandomQuote [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   other exports [not provided] [no usage info] */
+/*! export zombieFactory [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ../../src/zombie.js .default */
+/*! other exports [not provided] [maybe used in main (runtime-defined)] */
 /*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -62,12 +62,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   !*** ../../src/unused.js ***!
   \***************************/
 /*! namespace exports */
-/*! export default [provided] [unused] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("/* unused harmony export default */\nfunction unused() {\n  return Math.random();\n}\n\n//# sourceURL=webpack://index/../../src/unused.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => /* binding */ unused\n/* harmony export */ });\nfunction unused() {\n  return Math.random();\n}\n\n//# sourceURL=webpack://index/../../src/unused.js?");
 
 /***/ }),
 
@@ -76,10 +76,10 @@ eval("/* unused harmony export default */\nfunction unused() {\n  return Math.ra
   !*** ../../src/zombie.js ***!
   \***************************/
 /*! namespace exports */
-/*! export default [provided] [used] [usage prevents renaming] */
-/*! export generateName [provided] [used] [usage prevents renaming] */
-/*! export getRandomQuote [provided] [used] [usage prevents renaming] */
-/*! other exports [not provided] [maybe used (runtime-defined)] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export generateName [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export getRandomQuote [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

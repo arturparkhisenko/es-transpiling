@@ -8,6 +8,6 @@
     "build": "./node_modules/esbuild-darwin-64/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"production\"' --minify --outfile=index.dist.min.js"
   },
   "devDependencies": {
-    "esbuild-darwin-64": "0.0.9"
+    "esbuild-darwin-64": "0.6.26"
   }
 }

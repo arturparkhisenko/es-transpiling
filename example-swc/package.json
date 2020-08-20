@@ -8,7 +8,7 @@
     "start": "swc ./../src/index.js"
   },
   "devDependencies": {
-    "@swc/cli": "^0.1.23",
-    "@swc/core": "^1.1.35"
+    "@swc/cli": "^0.1.26",
+    "@swc/core": "^1.2.20"
   }
 }
