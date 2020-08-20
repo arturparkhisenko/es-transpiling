@@ -9,7 +9,7 @@
 - Rollup
   - [rollup-v1](https://github.com/rollup/rollup/tree/v1.32.1/docs)
   - [rollup-v2](https://rollupjs.org/guide/en/)
-- [Rome](https://romejs.dev/)
+- [Rome](https://romefrontend.dev/)
 - [swc](https://swc-project.github.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 - Webpack
