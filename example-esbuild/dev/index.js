@@ -33,8 +33,6 @@
   function empty() {
   }
 
-  // ../src/unused.js
-
   // ../src/zombie.js
   const zombie_exports = {};
   __export(zombie_exports, {

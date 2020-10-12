@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "scripts": {
-    "start": "./node_modules/esbuild-darwin-64/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"production\"' --outfile=index.dist.js",
-    "dev": "./node_modules/esbuild-darwin-64/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"development\"' --outfile=index.dev.js",
-    "build": "./node_modules/esbuild-darwin-64/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"production\"' --minify --outfile=index.dist.min.js"
+    "start": "cross-env ./node_modules/esbuild/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"development\"' --outdir=dev",
+    "build": "cross-env ./node_modules/esbuild/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"production\"' --minify --outdir=dist"
   },
   "devDependencies": {
-    "esbuild-darwin-64": "0.6.26"
+    "cross-env": "^7.0.2",
+    "esbuild": "^0.7.14"
   }
 }

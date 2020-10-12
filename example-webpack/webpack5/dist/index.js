@@ -53,21 +53,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"empty\": () => /* reexport safe */ _empty__WEBPACK_IMPORTED_MODULE_0__.default,\n/* harmony export */   \"generateName\": () => /* reexport safe */ _zombie__WEBPACK_IMPORTED_MODULE_2__.generateName,\n/* harmony export */   \"getRandomQuote\": () => /* reexport safe */ _zombie__WEBPACK_IMPORTED_MODULE_2__.getRandomQuote,\n/* harmony export */   \"zombieFactory\": () => /* reexport safe */ _zombie__WEBPACK_IMPORTED_MODULE_2__.default,\n/* harmony export */   \"zombie\": () => /* reexport module object */ _zombie__WEBPACK_IMPORTED_MODULE_2__,\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _empty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./empty */ \"../../src/empty.js\");\n/* harmony import */ var _unused__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./unused */ \"../../src/unused.js\");\n/* harmony import */ var _zombie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./zombie */ \"../../src/zombie.js\");\n\n\n\n\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  empty: _empty__WEBPACK_IMPORTED_MODULE_0__.default,\n  generateName: _zombie__WEBPACK_IMPORTED_MODULE_2__.generateName,\n  getRandomQuote: _zombie__WEBPACK_IMPORTED_MODULE_2__.getRandomQuote,\n  zombieFactory: _zombie__WEBPACK_IMPORTED_MODULE_2__.default,\n  zombie: _zombie__WEBPACK_IMPORTED_MODULE_2__\n});\n\n//# sourceURL=webpack://index/../../src/index.js?");
-
-/***/ }),
-
-/***/ "../../src/unused.js":
-/*!***************************!*\
-  !*** ../../src/unused.js ***!
-  \***************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => /* binding */ unused\n/* harmony export */ });\nfunction unused() {\n  return Math.random();\n}\n\n//# sourceURL=webpack://index/../../src/unused.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"empty\": () => /* reexport safe */ _empty__WEBPACK_IMPORTED_MODULE_0__.default,\n/* harmony export */   \"generateName\": () => /* reexport safe */ _zombie__WEBPACK_IMPORTED_MODULE_1__.generateName,\n/* harmony export */   \"getRandomQuote\": () => /* reexport safe */ _zombie__WEBPACK_IMPORTED_MODULE_1__.getRandomQuote,\n/* harmony export */   \"zombieFactory\": () => /* reexport safe */ _zombie__WEBPACK_IMPORTED_MODULE_1__.default,\n/* harmony export */   \"zombie\": () => /* reexport module object */ _zombie__WEBPACK_IMPORTED_MODULE_1__,\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _empty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./empty */ \"../../src/empty.js\");\n/* harmony import */ var _zombie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./zombie */ \"../../src/zombie.js\");\n\n\n\n\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  empty: _empty__WEBPACK_IMPORTED_MODULE_0__.default,\n  generateName: _zombie__WEBPACK_IMPORTED_MODULE_1__.generateName,\n  getRandomQuote: _zombie__WEBPACK_IMPORTED_MODULE_1__.getRandomQuote,\n  zombieFactory: _zombie__WEBPACK_IMPORTED_MODULE_1__.default,\n  zombie: _zombie__WEBPACK_IMPORTED_MODULE_1__\n});\n\n//# sourceURL=webpack://index/../../src/index.js?");
 
 /***/ }),
 
