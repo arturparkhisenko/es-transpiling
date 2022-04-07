@@ -4,6 +4,6 @@
   "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.11.0"
+    "eslint": "^8.12.0"
   }
 }
