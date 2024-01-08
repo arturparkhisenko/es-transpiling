@@ -1,7 +1,6 @@
 {
   "name": "example-parcel",
   "version": "1.0.0",
-  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "scripts": {
     "start": "parcel ./../src/index.js"
   },

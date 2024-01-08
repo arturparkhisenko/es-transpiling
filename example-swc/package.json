@@ -1,7 +1,6 @@
 {
   "name": "example-swc",
   "version": "1.0.0",
-  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "type": "module",
   "scripts": {
     "build": "swc ./../src/index.js -o index.dist.js",

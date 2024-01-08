@@ -1,0 +1,14 @@
+{
+  "name": "example-biome",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "biome check index.js",
+    "format": "biome format index.js --write",
+    "check": "biome check index.js --apply",
+    "start": "biome run index.js"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1"
+  }
+}

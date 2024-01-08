@@ -1,7 +1,6 @@
 {
   "name": "example-esbuild",
   "version": "1.0.0",
-  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "scripts": {
     "start": "cross-env ./node_modules/esbuild/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"development\"' --outdir=dev",
     "build": "cross-env ./node_modules/esbuild/bin/esbuild ./../src/index.js --bundle '--define:process.env.NODE_ENV=\"production\"' --minify --outdir=dist"
