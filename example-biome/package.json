@@ -1,14 +1,14 @@
 {
-  "name": "example-rome",
+  "name": "example-biome",
   "version": "1.0.0",
-  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "type": "module",
   "scripts": {
-    "build": "rome bundle index.js index.dist.js",
-    "lint": "rome check index.js",
-    "start": "rome run index.js"
+    "lint": "biome check index.js",
+    "format": "biome format index.js --write",
+    "check": "biome check index.js --apply",
+    "start": "biome run index.js"
   },
   "devDependencies": {
-    "rome": "^10.0.4-beta"
+    "@biomejs/biome": "^1.4.1"
   }
 }

@@ -2,11 +2,9 @@ import {
   empty,
   generateName,
   getRandomQuote,
+  zombie,
   zombieFactory,
-  zombie
-} from './src/index';
-
-// Rome throws error resolver/notFound with message: Cannot find ../src/index from index.js
+} from "./src/index";
 
 export { empty, generateName, getRandomQuote, zombieFactory, zombie };
 
