@@ -1,7 +1,6 @@
 {
   "name": "webpack4",
   "version": "1.0.0",
-  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "main": "dist/index.js",
   "module": "index.js",
   "scripts": {

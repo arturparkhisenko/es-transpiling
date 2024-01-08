@@ -1,7 +1,6 @@
 {
   "name": "example-typescript",
   "version": "1.0.0",
-  "author": "Artur Parkhisenko <ikeagold@gmail.com> (https://arturparkhisenko.github.io/)",
   "type": "module",
   "scripts": {
     "build": "npm run build-es5-amd && npm run build-es5-cjs && npm run build-es5-umd && npm run build-es5-es6",
